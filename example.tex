@@ -1,0 +1,32 @@
+\documentclass[a4paper,11pt]{article} %Especifica que escribiré un documento tipo artículo de fuente 11pt
+\usepackage[ utf8]{inputenc} %Codificación
+\usepackage{graphicx} %Inclusión de gráficos
+\usepackage[activeacute,spanish]{babel} %Para escribir en español y con tildes ej: eón y no e\'on
+\newcommand{\tab}{\hspace*{5em}} %Creación de comando para tabular
+
+\begin{document}
+\tableofcontents %índice
+\newpage  %nueva página
+Este es un ejemplo de texto en \LaTeX \textbf{texto en negrita} \tab Uso del comando creado tab \\ uso 
+de nueva línea, \emph{texto con énfasis}
+\section{Uso de Secciones}
+Este es un uso de secciones, es muy útil, \LaTeX lo maneja muy eficiente y crea el índice automáticamente
+	\subsection{Una subsección}
+	Uso subsecciones, un ejemplo de lista es:
+	\begin{itemize} %Inicio una lista
+		\item Este es un item, lo agrego a la lista con el comando item.
+		\item Otro elemento de la lista
+	\end{itemize}
+	
+	\begin{enumerate} %Lista numerada
+	\item Lista enumerada, incluso puedo hacer lista de listas anidadas
+		\begin{enumerate}
+			\item Item 
+			\item Otro Item
+			\item Otro Otro Item
+		\end{enumerate}
+	\end{enumerate}
+\section{Otra subsección}
+Testeando comandos básicos de  \LaTeX
+	by: Iván Aveiga
+\end{document}
